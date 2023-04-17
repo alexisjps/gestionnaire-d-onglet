@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="options.css">
+  <title>Options - Gestionnaire d'onglets</title>
+</head>
+<body>
+  <header>
+    <h1>Options - Gestionnaire d'onglets</h1>
+  </header>
+
+  <section id="keyboard-shortcuts">
+    <h2>Raccourcis clavier</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Action</th>
+          <th>Raccourci</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ouvrir l'extension</td>
+          <td>
+            <input type="text" id="open-extension-shortcut" size="8" />
+          </td>
+        </tr>
+        <!-- Ajoutez d'autres raccourcis clavier ici -->
+      </tbody>
+    </table>
+  </section>
+
+  <section id="save-options">
+    <button id="save-button">Enregistrer les options</button>
+    <span id="save-status" style="display:none;">Options enregistrées.</span>
+  </section>
+
+  <script src="options.js"></script>
+</body>
+</html>

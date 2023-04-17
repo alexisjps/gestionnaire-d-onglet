@@ -1,0 +1,35 @@
+{
+    "manifest_version": 3,
+    "name": "Gestionnaire d'onglets",
+    "version": "1.0",
+    "description": "Une extension pour gérer facilement vos onglets ouverts dans le navigateur Chrome.",
+    "permissions": [
+      "tabs",
+      "storage"
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "48": "icon48.png"
+      }
+    },
+    "options_page": "options.html",
+    "background": {
+      "service_worker": "background.js"
+    },
+    "commands": {
+      "open_popup": {
+        "suggested_key": {
+          "default": "Ctrl+Shift+E"
+        },
+        "description": "Ouvrir la fenêtre contextuelle de l'extension"
+      }
+    },
+    "icons": {
+      "48": "icon48.png"
+    },
+    "content_security_policy": {
+      "extension_pages": "script-src 'self'; object-src 'self'"
+    }
+  }
+  

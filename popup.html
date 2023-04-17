@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="popup.css">
+  <title>Gestionnaire d'onglets</title>
+</head>
+<body>
+  <h1>Gestionnaire d'onglets</h1>
+  <form id="create-group-form">
+    <label for="group-name">Nom du groupe :</label>
+    <input type="text" id="group-name" name="group-name">
+    <button type="submit">Créer un groupe</button>
+  </form>
+  <div id="tab-groups-container"></div>
+  <h2>Rechercher un onglet</h2>
+  <input type="text" id="search-input" placeholder="Recherche...">
+  <ul id="search-results-list"></ul>
+  <script src="popup.js"></script>
+</body>
+</html>
